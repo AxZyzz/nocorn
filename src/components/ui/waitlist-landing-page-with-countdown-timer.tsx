@@ -299,7 +299,7 @@ export function WaitlistExperience(): ReactElement {
       // Check if email already exists
       const emailExists = await checkEmailExists(email)
       if (emailExists) {
-        setError("You're already registered! Check your email for updates.")
+        setError("You&apos;re already registered! Check your email for updates.")
         setIsLoading(false)
         return
       }

@@ -5,8 +5,13 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Waitlist UI',
-  description: 'A beautiful waitlist landing page with countdown timer',
+  title: 'NO-CORN | Join the Waitlist',
+  description: 'Join the NO-CORN waitlist - Your gamified porn blocker and wellness tracker launching soon',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.jpg',
+  },
 }
 
 export default function RootLayout({
