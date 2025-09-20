@@ -416,7 +416,7 @@ export function WaitlistExperience(): ReactElement {
                     {/* Discord Button */}
                     <div className="flex justify-center mb-6">
                       <button
-                        onClick={() => window.open('https://discord.gg/uUpeXN3A2j', '_blank')}
+                        onClick={() => window.open('https://discord.gg/eZrcXBqQ', '_blank')}
                         className="flex items-center gap-2 px-4 py-2 bg-[#5865F2]/20 hover:bg-[#5865F2]/30 border border-[#5865F2]/40 hover:border-[#5865F2]/60 rounded-xl text-white/90 hover:text-white text-sm font-medium transition-all duration-300 backdrop-blur-sm hover:shadow-lg hover:shadow-[#5865F2]/20"
                       >
                         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
