@@ -292,7 +292,7 @@ export function WaitlistExperience(): ReactElement {
       // Check if email already exists
       const emailExists = await checkEmailExists(email)
       if (emailExists) {
-        setError("You're already registered! Check your email for updates.")
+        setError("You&apos;re already registered! Check your email for updates.")
         setIsLoading(false)
         return
       }
@@ -459,7 +459,7 @@ export function WaitlistExperience(): ReactElement {
                     </div>
                     <h3 className="text-xl font-semibold text-white mb-2 drop-shadow-lg">Welcome to NO-CORN! 🎉</h3>
                     <p className="text-white/90 text-sm drop-shadow-md mb-4">
-                      You're on the waitlist! We'll notify you when we launch.
+                      You&apos;re on the waitlist! We&apos;ll notify you when we launch.
                     </p>
                     
                     {/* Discord Button in Success State */}
