@@ -246,6 +246,13 @@ export function WaitlistExperience(): ReactElement {
   useEffect(() => {
     const fetchWaitlistCount = async () => {
       try {
+        // Check if Supabase is properly configured
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+        if (!supabaseUrl || supabaseUrl === 'https://placeholder.supabase.co') {
+          console.log('Supabase not configured, using default count')
+          return
+        }
+
         const { count, error } = await supabase
           .from('waitlist')
           .select('*', { count: 'exact', head: true })
